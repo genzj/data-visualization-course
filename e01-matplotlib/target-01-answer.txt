@@ -1,0 +1,5 @@
+gr = tips.groupby('size')
+tips_by_size = gr.sum()
+plt.plot(tips_by_size.index, tips_by_size['total_bill'], 'r^-', linewidth=0.5, markersize=10, markeredgecolor='k', markerfacecolor=(0, 0, 0, 0) )
+plt.plot(tips_by_size.index, tips_by_size['tip'], 'bo-', linewidth=0.5, markersize=10, markeredgecolor='g', markerfacecolor=(0, 0, 0, 0))
+plt.show()
