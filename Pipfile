@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple/"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+jupyter = "*"
+matplotlib = "*"
+notebook = "*"
+numpy = "*"
+pandas = "*"
+plotly = "*"
+pytz = "*"
+requests = "*"
+seaborn = "*"
+statsmodels = "*"
+xlrd = "*"
+
+[requires]
+python_version = "3.6"
