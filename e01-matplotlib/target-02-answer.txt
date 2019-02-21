@@ -1,0 +1,8 @@
+plt.scatter(
+    'size', 'tip', c='total_bill', cmap='plasma',
+    data=tips
+)
+plt.colorbar(orientation='horizontal')
+plt.xlabel('Size')
+plt.ylabel('Tip $')
+plt.show()

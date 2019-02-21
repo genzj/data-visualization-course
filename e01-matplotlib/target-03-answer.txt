@@ -1,0 +1,13 @@
+plt.axhline(male_tip, linestyle='--', color='k')
+plt.axhline(female_tip, linestyle='--', color='r')
+plt.annotate(
+    xy=[50, male_tip], xytext=[60, 4], textcoords='offset pixels',
+    s='Male: $' + str(male_tip.round(3)),
+    arrowprops=dict(arrowstyle='->')
+)
+plt.annotate(
+    xy=[50, female_tip], xytext=[60, -4], textcoords='offset pixels',
+    s='Female: $' + str(female_tip.round(3)),
+    arrowprops=dict(arrowstyle='->')
+)
+plt.text(x=60, y=4.2, s='Average Tip', bbox=dict(facecolor='pink', boxstyle='round'))
